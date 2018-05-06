@@ -33,10 +33,10 @@ class ZisoftTests(unittest.TestCase):
 
     def tearDown(self):
         # logout
-        # self.assertEquals("zisoft", self.driver.find_element_by_xpath("//a/span").text)
-        # self.driver.find_element_by_xpath("//a/span").click()
-        # self.driver.find_element_by_link_text("Logout").click()
-        # self.assertEquals("Zisoft Login", self.driver.find_element_by_xpath("//h1").text)
+        self.assertEquals("zisoft", self.driver.find_element_by_xpath("//a/span").text)
+        self.driver.find_element_by_xpath("//a/span").click()
+        self.driver.find_element_by_link_text("Logout").click()
+        self.assertEquals("Zisoft Login", self.driver.find_element_by_xpath("//h1").text)
         # close the browser window
         self.driver.quit()
 
